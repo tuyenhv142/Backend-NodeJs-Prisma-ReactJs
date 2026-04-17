@@ -1,0 +1,134 @@
+[
+  {
+    "placeId": "mock_dintaifung_01",
+    "name": "Din Tai Fung (Xinyi Store)",
+    "address": "No. 194, Sec 2, Xinyi Rd, Da’an District, Taipei City",
+    "city": "Taipei",
+    "lat": 25.033363,
+    "lng": 121.529824,
+    "rating": 4.8,
+    "category": "Dim Sum / Taiwanese",
+    "imageUrl": "https://images.unsplash.com/photo-1496116218417-1a781b1c416c?auto=format&fit=crop&w=400&q=80"
+  },
+  {
+    "placeId": "mock_lindongfang_02",
+    "name": "Lin Dong Fang Beef Noodle (林東芳牛肉麵)",
+    "address": "No. 322, Section 2, Bade Rd, Zhongshan District, Taipei City",
+    "city": "Taipei",
+    "lat": 25.046522,
+    "lng": 121.541433,
+    "rating": 4.5,
+    "category": "Beef Noodles",
+    "imageUrl": "https://images.unsplash.com/photo-1585032226651-759b368d7246?auto=format&fit=crop&w=400&q=80"
+  },
+  {
+    "placeId": "mock_aychung_03",
+    "name": "Ay-Chung Flour-Rice Noodle (阿宗麵線)",
+    "address": "No. 8-1, Emei St, Wanhua District, Taipei City",
+    "city": "Taipei",
+    "lat": 25.043361,
+    "lng": 121.507641,
+    "rating": 4.3,
+    "category": "Street Food",
+    "imageUrl": "https://images.unsplash.com/photo-1555126634-ba22ea140b95?auto=format&fit=crop&w=400&q=80"
+  },
+  {
+    "placeId": "mock_hotstar_04",
+    "name": "Hot-Star Large Fried Chicken (豪大大雞排)",
+    "address": "No. 113, Jihe Rd, Shilin District, Taipei City",
+    "city": "Taipei",
+    "lat": 25.087814,
+    "lng": 121.524451,
+    "rating": 4.2,
+    "category": "Fried Chicken / Night Market",
+    "imageUrl": "https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?auto=format&fit=crop&w=400&q=80"
+  },
+  {
+    "placeId": "mock_annan_viet_01",
+    "name": "Quán Việt Nam Cô Lan (阿蘭越南小吃)",
+    "address": "Annan District, Tainan City (Gần khu chợ Đồng An)",
+    "city": "Tainan",
+    "lat": 23.0491,
+    "lng": 120.1862,
+    "rating": 4.6,
+    "category": "Vietnamese Food",
+    "imageUrl": "https://images.unsplash.com/photo-1582878826629-29b7ad1cdc43?auto=format&fit=crop&w=400&q=80"
+  },
+  {
+    "placeId": "mock_annan_beef_02",
+    "name": "Súp bò tươi Tainan (文章牛肉湯 - 安南)",
+    "address": "Annan District, Tainan City",
+    "city": "Tainan",
+    "lat": 23.0475,
+    "lng": 120.184,
+    "rating": 4.8,
+    "category": "Local Beef Soup",
+    "imageUrl": "https://images.unsplash.com/photo-1585032226651-759b368d7246?auto=format&fit=crop&w=400&q=80"
+  },
+  {
+    "placeId": "mock_annan_milkfish_03",
+    "name": "Cháo cá măng A-Chuan (阿川虱目魚丸)",
+    "address": "Annan District, Tainan City",
+    "city": "Tainan",
+    "lat": 23.046,
+    "lng": 120.1855,
+    "rating": 4.5,
+    "category": "Seafood / Porridge",
+    "imageUrl": "https://images.unsplash.com/photo-1548943487-a2e4f43b4850?auto=format&fit=crop&w=400&q=80"
+  },
+  {
+    "placeId": "mock_annan_boba_04",
+    "name": "Trà sữa Kebuke (可不可熟成紅茶)",
+    "address": "Annan District, Tainan City",
+    "city": "Tainan",
+    "lat": 23.0485,
+    "lng": 120.183,
+    "rating": 4.4,
+    "category": "Bubble Tea",
+    "imageUrl": "https://images.unsplash.com/photo-1558855567-1a3af4125b29?auto=format&fit=crop&w=400&q=80"
+  },
+  {
+    "placeId": "ChIJFRoOUQB3bjQRL4M4XxZTbXw",
+    "name": "雲·越南河粉 (Phở Việt Nam Vân)",
+    "address": "No. 98, Section 4, Haidian Rd, Annan District, Tainan City",
+    "city": "Tainan",
+    "lat": 23.0556941,
+    "lng": 120.1772777,
+    "rating": 4.4,
+    "category": "Vietnamese Noodles",
+    "imageUrl": "https://images.unsplash.com/photo-1582878826629-29b7ad1cdc43?auto=format&fit=crop&w=400&q=80"
+  },
+  {
+    "placeId": "ChIJI8UHUlXZbTQRityPHkapKB8",
+    "name": "凰詩越南美食 (Hoàng Thi Việt Nam Mỹ Thực)",
+    "address": "No. 480-1, Section 6, Anzhong Rd, Annan District, Tainan City",
+    "city": "Tainan",
+    "lat": 23.0613002,
+    "lng": 120.131811,
+    "rating": 4.8,
+    "category": "Vietnamese Food",
+    "imageUrl": "https://images.unsplash.com/photo-1555126634-ba22ea140b95?auto=format&fit=crop&w=400&q=80"
+  },
+  {
+    "placeId": "ChIJ2yM2yTfZbTQRek9WnTz9DAo",
+    "name": "榛婷台越料理 (Nhà hàng Đài-Việt Trăn Đình)",
+    "address": "No. 373, Yantian Rd, Annan District, Tainan City",
+    "city": "Tainan",
+    "lat": 23.034387,
+    "lng": 120.147636,
+    "rating": 4.0,
+    "category": "Taiwanese-Vietnamese Food",
+    "imageUrl": "https://images.unsplash.com/photo-1548943487-a2e4f43b4850?auto=format&fit=crop&w=400&q=80"
+  },
+  {
+    "placeId": "ChIJbeHweRXYbTQRKeLnzSbRpAs",
+    "name": "Dong Shang Taiwanese Seafood (Đông Hương Hải Sản)",
+    "address": "No. 217, Section 6, Anzhong Rd, Annan District, Tainan City",
+    "city": "Tainan",
+    "lat": 23.0607499,
+    "lng": 120.1366552,
+    "rating": 4.5,
+    "category": "Local Seafood",
+    "imageUrl": "https://images.unsplash.com/photo-1585032226651-759b368d7246?auto=format&fit=crop&w=400&q=80"
+  }
+]

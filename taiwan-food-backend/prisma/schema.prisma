@@ -1,0 +1,74 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model Restaurant {
+  id        Int      @id @default(autoincrement())
+  placeId   String?  @unique @db.VarChar(255)
+  name      String   @db.VarChar(255)
+  address   String   @db.VarChar(500)
+  city      String?  @db.VarChar(100)
+  rating    Float    @default(0.0)
+  imageUrl  String?  @db.Text @map("image_url")
+  category  String   @db.VarChar(100)
+  lat       Float    @default(0.0)
+  lng       Float    @default(0.0)
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  reviews   Review[]
+  
+  @@map("restaurants")
+}
+
+model Review {
+  id           Int        @id @default(autoincrement())
+  
+  // Liên kết với Restaurant
+  restaurantId Int
+  restaurant   Restaurant @relation(fields: [restaurantId], references: [id])
+  
+  // Liên kết với User (Đổi userId thành Int để khớp với bảng User)
+  userId       Int
+  user         User       @relation(fields: [userId], references: [id])
+  
+  rating       Int        
+  comment      String     @db.Text
+  createdAt    DateTime   @default(now()) @map("created_at")
+
+  // Chú ý: Đã xóa trường userName ở đây, vì khi cần tên, 
+  // ta có thể join sang bảng User (include: { user: true })
+
+  @@map("reviews") // Thêm dòng này để đồng bộ naming convention
+}
+
+model User {
+  id        Int      @id @default(autoincrement())
+  name      String   @db.VarChar(255)
+  password  String   @db.VarChar(255)
+  imageUrl  String?  @map("image_url")
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  reviews   Review[] // Một user có thể viết nhiều review
+
+  @@map("users")
+}
+
+model Video {
+  id        Int      @id @default(autoincrement())
+  idVideo   String   @db.VarChar(255)
+  title     String   @db.VarChar(255)
+  type      String   @db.VarChar(255)
+  channel   String   @db.VarChar(255)
+  thumbnail String?  @map("image_url")
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  @@map("videos")
+}
