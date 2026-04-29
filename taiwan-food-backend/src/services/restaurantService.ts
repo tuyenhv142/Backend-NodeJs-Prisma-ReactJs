@@ -1,7 +1,7 @@
 import axios from "axios";
 import { prisma } from "../prisma/client";
-import { AppError } from "../helpers/AppError";
-import { logger } from "../helpers/logger";
+import { AppError } from "../core/appError";
+import { logger } from "../core/logger";
 
 // ── Types ─────────────────────────────────────────
 export interface CreateRestaurantInput {

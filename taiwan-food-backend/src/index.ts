@@ -9,11 +9,11 @@ import swaggerUi from "swagger-ui-express";
 import path from "path";
 
 import { buildSwaggerSpec } from "./swagger";
-import { requestId } from "./middlewares/requestId";
-import { errorHandler } from "./middlewares/errorHandler";
+import { requestId } from "./core/requestId";
+import { errorHandler } from "./core/errorHandler";
 import { initVideoCronJob } from "./helpers/videoHelper";
 import { prisma } from "./prisma/client";
-import { logger } from "./helpers/logger";
+import { logger } from "./core/logger";
 
 import authRoutes from "./routes/authRoute";
 import restaurantRoutes from "./routes/restaurantRoute";

@@ -1,7 +1,7 @@
 import { Request, Response, NextFunction } from "express";
-import { sendSuccess, sendError } from "../helpers/apiResponse";
+import { sendSuccess, sendError } from "../core/apiResponse";
 import { restaurantService } from "../services/restaurantService";
-import { AppError } from "../helpers/AppError";
+import { AppError } from "../core/appError";
 import {
   CreateRestaurantSchema,
   RestaurantIdSchema,

@@ -1,8 +1,8 @@
 import jwt from "jsonwebtoken";
 import bcrypt from "bcrypt";
 import { prisma } from "../prisma/client";
-import { AppError } from "../helpers/AppError";
-import { logger } from "../helpers/logger";
+import { AppError } from "../core/appError";
+import { logger } from "../core/logger";
 
 const JWT_SECRET = () => process.env.JWT_SECRET as string;
 const SERVER_API_KEY = () => process.env.SERVER_API_KEY as string;

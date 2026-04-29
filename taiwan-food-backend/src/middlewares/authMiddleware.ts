@@ -1,6 +1,6 @@
 import { Request, Response, NextFunction } from "express";
 import jwt from "jsonwebtoken";
-import { sendError } from "../helpers/apiResponse";
+import { sendError } from "../core/apiResponse";
 
 // 1. Tạo một Interface mô tả chính xác những gì bạn cất giấu trong Token lúc tạo (Sign)
 // Định nghĩa lại cho chuẩn với hàm Login

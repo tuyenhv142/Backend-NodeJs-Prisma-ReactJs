@@ -1,6 +1,6 @@
 import { google } from "googleapis";
 import { prisma } from "../prisma/client";
-import { logger } from "../helpers/logger";
+import { logger } from "../core/logger";
 
 const YOUTUBE_CHANNEL_ID = "UCSEI3nk0QSGcQKR75O6vM6Q";
 

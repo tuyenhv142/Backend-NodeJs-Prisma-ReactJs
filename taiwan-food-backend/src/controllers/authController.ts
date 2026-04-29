@@ -1,5 +1,5 @@
 import { Request, Response, NextFunction } from "express";
-import { sendSuccess, sendError } from "../helpers/apiResponse";
+import { sendSuccess, sendError } from "../core/apiResponse";
 import { authService } from "../services/authService";
 import { LoginSchema, RegisterSchema } from "../schemas/authSchema";
 
