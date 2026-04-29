@@ -4,7 +4,7 @@ import { extendZodWithOpenApi } from '@asteasolutions/zod-to-openapi';
 extendZodWithOpenApi(z);
 
 export const GetPreAuthTokenSchema = z.object({
-  ApiKey: z.string().default("hoang_mit_super_secret_key_2026"),
+  ApiKey: z.string().min(1, "API Key is required"),
 });
 
 // export const PreAuthTokenRequestSchema = z.object({

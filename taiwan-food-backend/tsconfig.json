@@ -1,27 +1,20 @@
 {
   "compilerOptions": {
-    /* File Layout */
     "rootDir": "./src",
-    "outDir": "dist_frontend",
-
-    /* Environment Settings */
-    "target": "es2020",
-    "module": "Node16",
+    "outDir": "dist",
+    "target": "es2022",
+    "module": "commonjs",
     "lib": ["esnext"],
     "types": ["node"],
-
-    /* Interop System */
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
-
-    /* Stricter Typechecking */
     "strict": true,
     "skipLibCheck": true,
-
-    /* Module Resolution - Cập nhật cho TS 6.0 */
-    // Thay vì dùng 'node', ta dùng 'node16' hoặc 'bundler' để tránh lỗi deprecated
-    "moduleResolution": "node16",
-    "resolveJsonModule": true
+    "moduleResolution": "node",
+    "ignoreDeprecations": "6.0",
+    "resolveJsonModule": true,
+    "declaration": true,
+    "sourceMap": true
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules"]

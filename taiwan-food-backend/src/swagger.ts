@@ -63,9 +63,12 @@ export const createdResponse = (dataSchema: z.ZodTypeAny) => ({
 
 export { registry };
 
-export const buildSwaggerSpec = () =>
-  new OpenApiGeneratorV3(registry.definitions).generateDocument({
+export const buildSwaggerSpec = () => {
+  const host = process.env.HOST === "0.0.0.0" ? "localhost" : (process.env.HOST || "localhost");
+  const port = process.env.PORT || "8765";
+  return new OpenApiGeneratorV3(registry.definitions).generateDocument({
     openapi: "3.0.0",
     info: { title: "Taiwan Food Finder API", version: "1.0.0" },
-    servers: [{ url: "http://localhost:8765" }],
+    servers: [{ url: `http://${host}:${port}` }],
   });
+};
